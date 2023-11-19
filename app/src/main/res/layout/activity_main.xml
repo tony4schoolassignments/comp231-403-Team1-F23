@@ -32,18 +32,24 @@
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="Full-Time Student"
+        android:background="@drawable/fulltime_btn"
+        android:textColor="@color/white"
         android:textAlignment="center"
+        android:padding="10dp"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="271dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:text="Part-Time Student"
+        android:background="@drawable/parttime_btn"
+        android:textColor="@color/white"
+        android:padding="10dp"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="354dp" />
 
