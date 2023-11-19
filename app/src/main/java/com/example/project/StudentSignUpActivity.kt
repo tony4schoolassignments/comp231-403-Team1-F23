@@ -28,7 +28,8 @@ class StudentSignUpActivity : AppCompatActivity() {
         studentPasswordEditText = findViewById(R.id.edit_student_password_input)
         studentUserName = findViewById(R.id.edit_student_username_input)
 
-
+        studentSignUpButton = findViewById(R.id.btn_student_sign_up_success)
+        backToHomeButton = findViewById(R.id.btn_back_to_home_page)
 
 
 
