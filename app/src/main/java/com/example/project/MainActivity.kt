@@ -1,11 +1,41 @@
 package com.example.project
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.widget.Button
+import android.widget.ImageView
+import android.widget.Toast
+import com.example.project.R.*
+import com.example.project.R.id.btn_student_sign_up
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var studentSignUpButton: Button
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(layout.activity_main)
+        Toast.makeText(this,getString(string.welcome_message), Toast.LENGTH_SHORT).show()
+
+        // Get the widgets reference from XML layout
+        val imageCourseLogo = findViewById<ImageView>(R.id.image_course_logo)
+
+        // Display an image on image view from resource
+        imageCourseLogo.setImageResource(drawable.course_logo)
+
+        studentSignUpButton = findViewById(R.id.btn_student_sign_up)
+
+        studentSignUpButton.setOnClickListener{
+            Log.i("TAG", "Sign Up button was Clicked!")
+            val intent = Intent(this, StudentSignUpActivity::class.java)
+            startActivity(intent)
+        }
+
     }
+
+
+
 }

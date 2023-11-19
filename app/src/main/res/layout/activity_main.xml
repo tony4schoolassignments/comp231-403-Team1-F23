@@ -27,7 +27,7 @@
 
     <Button
         android:id="@+id/buttonFullTime"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:text="Full-Time Student"
         android:background="@drawable/fulltime_btn"
@@ -38,7 +38,7 @@
 
     <Button
         android:id="@+id/buttonPartTime"
-        android:layout_width="180dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
         android:text="Part-Time Student"
         android:background="@drawable/parttime_btn"
@@ -57,10 +57,10 @@
         tools:layout_editor_absoluteY="416dp" />
 
     <Button
-        android:id="@+id/buttonSignIn"
-        android:layout_width="180dp"
+        android:id="@+id/btn_student_sign_up"
+        android:layout_width="150dp"
         android:layout_height="40dp"
-        android:text="Sign In"
+        android:text="Sign Up"
         android:background="@drawable/signin_btn"
         android:textColor="@color/white"
         android:layout_marginTop="10dp"

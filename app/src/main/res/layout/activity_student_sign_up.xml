@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".StudentSignUpActivity">
+
+
+    <EditText
+        android:id="@+id/edit_student_username_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/student_username_input"/>
+
+    <EditText
+        android:id="@+id/edit_student_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/student_password_input"/>
+
+    <Button
+        android:id="@+id/btn_student_sign_up_success"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:background="@drawable/signin_btn"
+        android:textColor="@color/white"
+        android:text="@string/student_sign_up_success"/>
+
+
+    <Button
+        android:id="@+id/btn_back_to_home_page"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/fulltime_btn"
+        android:textColor="@color/white"
+        android:text="@string/back_to_home_page"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
