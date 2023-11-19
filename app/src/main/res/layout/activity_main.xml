@@ -7,58 +7,64 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-
     tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:text="ACRMS"
+        android:text="Welcome to ACRMS"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Already have account?"
-        tools:layout_editor_absoluteX="114dp"
-        tools:layout_editor_absoluteY="186dp" />
+    <ImageView
+        android:id="@+id/image_course_logo"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:src="@drawable/course_logo"/>
+
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:id="@+id/buttonFullTime"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
         android:text="Full-Time Student"
         android:background="@drawable/fulltime_btn"
         android:textColor="@color/white"
         android:textAlignment="center"
-        android:padding="10dp"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="271dp" />
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
+        android:id="@+id/buttonPartTime"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
         android:text="Part-Time Student"
         android:background="@drawable/parttime_btn"
         android:textColor="@color/white"
-        android:padding="10dp"
+        android:layout_marginTop="10dp"
         tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="354dp" />
+        tools:layout_editor_absoluteY="271dp" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
         android:text="No account yet? Register here"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="416dp" />
+
+    <Button
+        android:id="@+id/buttonSignIn"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:text="Sign In"
+        android:background="@drawable/signin_btn"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp" />
 
 </LinearLayout>
