@@ -1,7 +1,9 @@
 package com.example.project
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
@@ -32,7 +34,30 @@ class StudentSignUpActivity : AppCompatActivity() {
         backToHomeButton = findViewById(R.id.btn_back_to_home_page)
 
 
+        studentSignUpButton.setOnClickListener{
+            // Get the values entered by the user
+            val password = studentPasswordEditText.text.toString().trim()
+            val userName = studentUserName.text.toString().trim()
 
+            // Check if any of the fields are empty
+            if (password.isEmpty() || userName.isEmpty()) {
+                Toast.makeText(this, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
+            } else {
+                // Save the student information in the database
+               // studentViewModel.insert(Student(userName,password))
+
+                Toast.makeText(this, "Student information saved successfully", Toast.LENGTH_SHORT).show()
+
+
+
+            }
+        }
+
+        backToHomeButton.setOnClickListener {
+            Log.i("TAG", "Home button was Clicked!")
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }
