@@ -47,7 +47,9 @@ class StudentSignUpActivity : AppCompatActivity() {
                // studentViewModel.insert(Student(userName,password))
 
                 Toast.makeText(this, "Student information saved successfully", Toast.LENGTH_SHORT).show()
-
+                // Open the StudentLoginActivity
+                val intent = Intent(this, MainActivity::class.java)
+               startActivity(intent)
 
 
             }
