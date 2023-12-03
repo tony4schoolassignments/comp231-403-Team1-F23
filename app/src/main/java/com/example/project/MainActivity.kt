@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         studentSignUpButton = findViewById(R.id.btn_student_sign_up)
 
+        // Log message and Display sign up screen
         studentSignUpButton.setOnClickListener{
             Log.i("TAG", "Sign Up button was Clicked!")
             val intent = Intent(this, StudentSignUpActivity::class.java)

@@ -55,6 +55,7 @@ class StudentSignUpActivity : AppCompatActivity() {
             }
         }
 
+        // Log message and start MainActivity
         backToHomeButton.setOnClickListener {
             Log.i("TAG", "Home button was Clicked!")
             val intent = Intent(this, MainActivity::class.java)
