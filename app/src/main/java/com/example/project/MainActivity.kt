@@ -14,6 +14,9 @@ import com.example.project.R.id.btn_student_sign_up
 class MainActivity : AppCompatActivity() {
 
     private lateinit var studentSignUpButton: Button
+    private lateinit var studentFullTimeSignUpButton: Button
+    private lateinit var studentPartTimeSignUpButton: Button
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +29,24 @@ class MainActivity : AppCompatActivity() {
         // Display an image on image view from resource
         imageCourseLogo.setImageResource(drawable.course_logo)
 
-        studentSignUpButton = findViewById(R.id.btn_student_sign_up)
+        studentSignUpButton = findViewById(btn_student_sign_up)
+        studentFullTimeSignUpButton= findViewById(id.buttonFullTime)
+        studentPartTimeSignUpButton= findViewById(id.buttonPartTime)
 
         // Log message and Display sign up screen
         studentSignUpButton.setOnClickListener{
+            Log.i("TAG", "Sign Up button was Clicked!")
+            val intent = Intent(this, StudentSignUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        studentFullTimeSignUpButton.setOnClickListener{
+            Log.i("TAG", "Sign Up button was Clicked!")
+            val intent = Intent(this, StudentSignUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        studentPartTimeSignUpButton.setOnClickListener{
             Log.i("TAG", "Sign Up button was Clicked!")
             val intent = Intent(this, StudentSignUpActivity::class.java)
             startActivity(intent)
