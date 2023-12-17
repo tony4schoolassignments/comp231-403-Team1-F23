@@ -30,8 +30,10 @@ class MainActivity : AppCompatActivity() {
         imageCourseLogo.setImageResource(drawable.course_logo)
 
         studentSignUpButton = findViewById(btn_student_sign_up)
+        adminSignUpButton = findViewById(btn_admin_sign_up)
         studentFullTimeSignUpButton= findViewById(id.buttonFullTime)
         studentPartTimeSignUpButton= findViewById(id.buttonPartTime)
+
 
         // Log message and Display sign up screen
         studentSignUpButton.setOnClickListener{
@@ -49,6 +51,12 @@ class MainActivity : AppCompatActivity() {
         studentPartTimeSignUpButton.setOnClickListener{
             Log.i("TAG", "Sign Up button was Clicked!")
             val intent = Intent(this, StudentSignUpActivity::class.java)
+            startActivity(intent)
+        }
+
+        adminSignUpButton.setOnClickListener{
+            Log.i("TAG", "Sign Up button was Clicked!")
+            val intent = Intent(this, AdminSignUpActivity::class.java)
             startActivity(intent)
         }
 
