@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminActivity">
+
+    <Button
+
+        android:id="@+id/buttonSystemAnalytics"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="System Analytics"
+        android:background="@drawable/fulltime_btn"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+        <Button
+    
+        android:id="@+id/buttonSystemSettings"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="System settings"
+        android:background="@drawable/fulltime_btn"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+</LinearLayout>
