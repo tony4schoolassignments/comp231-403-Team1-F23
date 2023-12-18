@@ -46,6 +46,17 @@
         android:layout_marginTop="10dp"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="271dp" />
+    <Button
+        android:id="@+id/guestContinue"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Continue as Guest"
+        android:background="@drawable/signin_btn"
+        android:textColor="@color/white"
+        android:layout_marginTop="10dp"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp"
+        />
 
     <TextView
         android:id="@+id/textView"
@@ -71,11 +82,12 @@
         android:id="@+id/btn_admin_sign_up"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:text="Sign Up"
+        android:text="Admin Sign Up"
         android:background="@drawable/signin_btn"
         android:textColor="@color/white"
         android:layout_marginTop="10dp"
         tools:layout_editor_absoluteX="125dp"
         tools:layout_editor_absoluteY="271dp" />
+
 
 </LinearLayout>

@@ -15,6 +15,9 @@ class AdminSignUpActivity : AppCompatActivity() {
     private lateinit var PasswordEditText: EditText
     private lateinit var SignUpButton: Button
     private lateinit var backToHomeButton: Button
+    private lateinit var adminPasswordEditText: EditText
+    private lateinit var adminUserName: EditText
+    private lateinit var adminSignUpButton: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_sign_up)

@@ -23,6 +23,10 @@
             android:label="@string/title_activity_student_sign_up"
             android:theme="@style/Theme.Project.NoActionBar" />
         <activity
+            android:name=".AdminSignUpActivity"
+            android:exported="false"
+            android:label="AdminSignUpActivity"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

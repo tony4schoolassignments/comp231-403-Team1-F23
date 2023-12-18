@@ -8,12 +8,12 @@ import android.widget.Button
 
 class AdminActivity : AppCompatActivity() {
 
-    private lateinit var studentFullTimeSignUpButton: Button
+
+    private lateinit var systemAnalytics: Button
+    private lateinit var systemSettings: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin)
-
-        studentFullTimeSignUpButton = findViewById(R.id.buttonFullTime)
 
         systemAnalytics = findViewById(R.id.buttonSystemAnalytics)
         systemSettings = findViewById(R.id.buttonSystemSettings)
@@ -22,7 +22,6 @@ class AdminActivity : AppCompatActivity() {
             val intent = Intent(this, AdminActivity::class.java)
             startActivity(intent)
         }
-
 
         systemSettings.setOnClickListener{
             val intent = Intent(this, AdminActivity::class.java)

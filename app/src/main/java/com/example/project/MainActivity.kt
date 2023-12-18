@@ -10,12 +10,15 @@ import android.widget.ImageView
 import android.widget.Toast
 import com.example.project.R.*
 import com.example.project.R.id.btn_student_sign_up
+import com.example.project.R.id.guestContinue
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var studentSignUpButton: Button
     private lateinit var studentFullTimeSignUpButton: Button
     private lateinit var studentPartTimeSignUpButton: Button
+    private lateinit var adminSignUpButton: Button
+    private lateinit var guestContinueButton: Button
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,8 +32,9 @@ class MainActivity : AppCompatActivity() {
         // Display an image on image view from resource
         imageCourseLogo.setImageResource(drawable.course_logo)
 
+        guestContinueButton = findViewById(guestContinue)
         studentSignUpButton = findViewById(btn_student_sign_up)
-        adminSignUpButton = findViewById(btn_admin_sign_up)
+        adminSignUpButton = findViewById(id.btn_admin_sign_up)
         studentFullTimeSignUpButton= findViewById(id.buttonFullTime)
         studentPartTimeSignUpButton= findViewById(id.buttonPartTime)
 
