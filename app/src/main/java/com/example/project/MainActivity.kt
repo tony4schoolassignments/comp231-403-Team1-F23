@@ -64,6 +64,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        guestContinueButton.setOnClickListener {
+            Log.i("TAG", "Guest Continue button clicked.")
+            val intent = Intent(this, GuestActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

@@ -14,8 +14,9 @@
     <string name="student_sign_up_success">Sign up</string>
     <string name="back_to_home_page">Home</string>
     <string name="welcome_message">Welcome to ACRMS!</string>
+    <string name="form_submit">Form Submitted!</string>
     <string name="welcome_sign_up_page">Welcome to Sign Up page</string>
-    <string name="admin_username_input" >Username</string>
-    <string name="admin_password_input" >Password</string>
+    <string name="admin_username_input">Username</string>
+    <string name="admin_password_input">Password</string>
     <string name="admin_sign_up_success" />
 </resources>

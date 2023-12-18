@@ -11,9 +11,7 @@ import android.widget.Toast
 
 class AdminSignUpActivity : AppCompatActivity() {
 
-    private lateinit var UserName: EditText
-    private lateinit var PasswordEditText: EditText
-    private lateinit var SignUpButton: Button
+
     private lateinit var backToHomeButton: Button
     private lateinit var adminPasswordEditText: EditText
     private lateinit var adminUserName: EditText
@@ -41,7 +39,7 @@ class AdminSignUpActivity : AppCompatActivity() {
             if (password.isEmpty() || userName.isEmpty()) {
                 Toast.makeText(this, "Please fill in all the fields", Toast.LENGTH_SHORT).show()
             } else {
-                // Save the sadmin information in the database
+                // Save the admin information in the database
                // adminViewModel.insert(Admin(userName,password))
 
                 Toast.makeText(this, "Admin information saved successfully", Toast.LENGTH_SHORT).show()

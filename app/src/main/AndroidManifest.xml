@@ -12,6 +12,18 @@
         android:theme="@style/Theme.Project"
         tools:targetApi="31">
         <activity
+            android:name=".ContactFormActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AboutIntActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourseListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GuestActivity"
+            android:exported="false" />
+        <activity
             android:name=".PartTimeStudentActivity"
             android:exported="false" />
         <activity
@@ -25,7 +37,7 @@
         <activity
             android:name=".AdminSignUpActivity"
             android:exported="false"
-            android:label="AdminSignUpActivity"/>
+            android:label="AdminSignUpActivity" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

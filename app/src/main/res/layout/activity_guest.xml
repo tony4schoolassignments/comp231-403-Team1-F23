@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GuestActivity"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Guest!"
+        android:textStyle="bold"
+        android:textSize="30sp">
+
+    </TextView>
+
+    <Button
+        android:id="@+id/courseList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/parttime_btn"
+        android:textColor="@color/white"
+        android:text="List of Available Courses"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp"/>
+    <Button
+        android:id="@+id/aboutInt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/fulltime_btn"
+        android:textColor="@color/white"
+        android:text="About Institution"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp" />
+    <Button
+        android:id="@+id/contactForm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/signin_btn"
+        android:text="Contact Form"
+        android:textColor="@color/white"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+</LinearLayout>
